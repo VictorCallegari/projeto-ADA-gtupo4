@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Grupo 4">
+    <meta name="description" content="Bem-vindo ao nosso cardápio digital. Aqui você encontrará nossa seleção de produtos deliciosos.">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="./imagens/LOGO-RESTAURANTE.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>TECH FOOD - CARDÁPIO</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-techfood">
+            <a href="#">
+                <img src="./imagens/LOGO-RESTAURANTE.png" alt="logo restaurante">
+            </a>
+        </div>
+
+        <nav class="seletor">
+            <div class="seletor-horizontal">
+                <ul class="link-lista">
+                    <li class="link-item">
+                        <a href="#">Início</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#cadastro">Cadastro</a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+        <div class="barra-pesquisa">
+            <form action="" class="form-pesquisa">
+                <div class="area-pesquisa">
+                    <div class="imagem-pesquisa">
+                        <img src="./imagens/icone-loupe-rouge.png" alt="icone de lupa">
+                    </div>
+                    <input class="input-pesquisa" type="search" name="pesquisa" id="pesquisa" placeholder="Busque por item"
+                     autocomplete="off">
+                </div>
+            </form>
+        </div>
+
+        <div class="address-button">
+            <div>
+                <span class="address">R. Sessenta e Sete, 29</span>
+            </div>
+            <div>
+                <button class="arrow-down">
+                    <img src="./imagens/red-arrow-down-hi.png" alt="seta para baixo">
+                </button>                
+            </div>
+        </div>
+
+        <div class="perfil-icon">
+
+            <div>
+                <button class="button-perfil">
+                    <img src="./imagens/perfil - icon.jpeg" alt="icone perfil">
+                </button>
+            </div>
+
+            <button class="bag-red">
+                <img src="./imagens/shopping-bag-icon-sale-package-sign-design-free-png.webp" alt="bag vermelha">
+
+                <p class="valor-itens">
+                    <span class="carrinho">R$ 0,00</span>
+                    <span class="carrinho">0 itens</span>
+                </p>
+            </button>                    
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div class="restaurante-container">
+            <div class="restaurante-area">
+                <header class="imagem-restaurante">
+                    <div class="restaurante">
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="area-texto-cardapio">
+            <h1 class="nome-cardapio">Cardápio Digital</h1>
+            <p class="frase-cardapio">
+                Bem-vindo ao nosso cardápio digital. Aqui você encontrará nossa
+                seleção de produtos deliciosos.
+            </p>
+        </div>
+        
+
+        <section class="menu">
+
+            <table class="tabela-menu" border="1">
+                <tr>
+                    <td rowspan="2">
+                        <img class="img-cardapio" src="./imagens/camarão.jpeg" alt="imagem de camarão assado no alho e óleo">
+                    </td>
+                    <th class="titulo">
+                        <h3>CAMARÃO AO ALHO E ÓLEO</h3>
+                    </td>
+                    <td rowspan="2" class="preco">
+                        <p><strong>R$ 59,99</strong></p>
+                    </td>
+                    <td rowspan="2" class="check-item">
+                        <input type="checkbox" name="select-item" id="camarao">
+                        <div class="select-item">
+                            <label for="quant-item">Quantidade:</label>
+                            <input type="number" name="quant-item" id="quant-item">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="descricao-item">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <img class="img-cardapio" src="imagens/churrasco.jpeg" alt="foto de uma peça de carne de churrasco por cima de uma tábua">
+                    </td>
+                    <th class="titulo">
+                        <h3>CHURRASCO GAÚCHO</h3>
+                    </td>
+                    <td rowspan="2" class="preco">
+                        <p><strong>R$ 59,99</strong></p>
+                    </td>
+                    <td rowspan="2" class="check-item">
+                        <input type="checkbox" name="select-item" id="churrasco">
+                        <div class="select-item">
+                            <label for="quant-item">Quantidade:</label>
+                            <input type="number" name="quant-item" id="quant-item">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="descricao-item">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <img class="img-cardapio" src="imagens/feijoada.jpeg" alt="foto de um caldeirão com feijoada">
+                    </td>
+                    <th class="titulo">
+                        <h3>FEIJOADA CARIOCA</h3>
+                    </td>
+                    <td rowspan="2" class="preco">
+                        <p><strong>R$ 59,99</strong></p>
+                    </td>
+                    <td rowspan="2" class="check-item">
+                        <input type="checkbox" name="select-item" id="feijoada">
+                        <div class="select-item">
+                            <label for="quant-item">Quantidade:</label>
+                            <input type="number" name="quant-item" id="quant-item">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="descricao-item">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img class="img-cardapio" src="./imagens/parmegiana.jpeg"
+                            alt="foto de um prato com macarrão e molho de tomate por cima, com queijo ralado"></td>
+                    <th class="titulo">
+                        <h3>MACARRONADA ITALIANA</h3>
+                    </td>
+                    <td rowspan="2" class="preco">
+                        <p><strong>R$ 59,99</strong></p>
+                    </td>
+                    <td rowspan="2" class="check-item">
+                        <input type="checkbox" name="select-item" id="macarronada">
+                        <div class="select-item">
+                            <label for="quant-item">Quantidade:</label>
+                            <input type="number" name="quant-item" id="quant-item">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="descricao-item">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+        <hr>
+
+        <section id="cadastro">
+            <div>
+                <h2>Formulário de Cadastro</h2>
+            </div>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> </br></br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required> </br></br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required> </br></br>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Serviço</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
