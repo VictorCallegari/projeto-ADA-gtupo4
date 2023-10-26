@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Metatags para SEO-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Grupo 4">
+    <meta name="description" content="Bem-vindo ao nosso cardápio digital. Aqui você encontrará nossa seleção de produtos deliciosos.">
+
+    <!-- Links para Estilização-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="./imagens/LOGO-RESTAURANTE.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>TECH FOOD - CARDÁPIO</title>
+
+</head>
+
+<body>
+    <header id="inicio">
+        <!-- Logomarca do Restaurante-->
+        <div class="logo-techfood">
+            <a href="../index.html">
+                <img src="../imagens/LOGO-RESTAURANTE.png" alt="logo restaurante">
+            </a>
+        </div>
+
+        <!-- Links para agilizar buscas no site-->
+        <nav class="seletor">
+            <div class="seletor-horizontal">
+                <ul class="link-lista">
+                    <li class="link-item">
+                        <a href="../index.html#menu">Menu</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="../index.html#cadastro">Cadastro</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="../index.html#footer">Informações</a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+        <div class="barra-pesquisa"> <!-- Procurar por produto no menu-->
+            <form action="" class="form-pesquisa">
+                <div class="area-pesquisa">
+                    <div class="imagem-pesquisa">
+                        <img src="../imagens/icone-loupe-rouge.png" alt="icone de lupa">
+                    </div>
+                    <input class="input-pesquisa" type="search" name="pesquisa" id="pesquisa" placeholder="Busque por item"
+                     autocomplete="off">
+                </div>
+            </form>
+        </div>
+
+        <div class="address-button"> <!-- Área de endereço-->
+            <div>
+                <span class="address">R. Sessenta e Sete, 29</span> <!-- Endereço de entrega atual-->
+            </div>
+            <div>
+                <button class="arrow-down"> <!-- cria link para alterar endereço de entrega-->
+                    <img src="../imagens/red-arrow-down-hi.png" alt="seta para baixo">
+                </button>                
+            </div>
+        </div>
+
+        <div class="perfil-icon">
+
+            <div>
+                <button class="button-perfil"> <!-- cria link para perfil do cliente cadastrado -->
+                    <a href="../index.html#form-group">
+                        <img src="../imagens/perfil - icon.jpeg" alt="icone perfil">
+                    </a>                    
+                </button>
+            </div>
+
+            <button class="bag-red"> <!-- cria link para a pagina carrinho com as informações contida nela-->
+                <img src="../imagens/shopping-bag-icon-sale-package-sign-design-free-png.webp" alt="bag vermelha">
+
+                <p class="valor-itens"> <!-- informações contida na página de carrinho-->
+                    <span class="carrinho">R$ 0,00</span>
+                    <span class="carrinho">0 itens</span>
+                </p>
+            </button>                    
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <!-- Imagem do cabeçalho - futuramente adicionar imagens passando automaticamente-->
+        <div class="restaurante-container">
+            <div class="restaurante-area">
+                <header class="imagem-restaurante">
+                    <div class="restaurante">
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="area-texto-cardapio">
+            <h1 class="nome-cardapio">Informações da Página</h1>
+        </div>
+        <!-- Cabeçalho do informações-->
+        <section class="container-info">
+
+            <!-- Section de seçoes das informações-->
+            <section class="informacoes" id="privacity">
+                <div>
+                    <h1>Política de Privacidade:</h1>
+
+                    <p>
+                        Nossa Política de Privacidade é uma declaração que descreve como coletamos, usamos,
+                        compartilhamos e protegemos suas informações pessoais, em conformidade com as leis
+                        de privacidade atuais, como o Regulamento Geral de Proteção de Dados (RGPD) na União
+                        Europeia e a Lei Geral de Proteção de Dados (LGPD) no Brasil. Valorizamos sua privacidade
+                        e estamos comprometidos em garantir que suas informações pessoais sejam tratadas com
+                        segurança e respeito. Nossa política explica quais informações coletamos, os fins para os
+                        quais as utilizamos, como você pode exercer seus direitos de privacidade e como entrar em
+                        contato conosco para dúvidas ou solicitações relacionadas à sua privacidade.
+                    </p>
+
+                </div>
+            </section>
+        </section>
+        <section class="container-info">   
+            <section class="informacoes" id="services">
+                <div>
+                    <h1>Termos de Serviço:</h1>
+
+                    <p>
+                        Nossos Termos de Serviço estabelecem o contrato que rege a utilização de nossos serviços,
+                        incluindo os direitos e responsabilidades tanto da nossa organização quanto dos usuários,
+                        em conformidade com as leis aplicáveis, como a Lei de Proteção ao Consumidor e outras
+                        leis relacionadas à prestação de serviços online. Ao aceitar nossos termos, você
+                        concorda em cumprir as diretrizes e regras estabelecidas no documento, as quais visam
+                        criar um ambiente seguro e harmonioso para todos os usuários. Além disso, abordamos
+                        questões como a propriedade intelectual, resolução de disputas e atualizações nos
+                        termos de serviço.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <section class="container-info" id="cookies">    
+            <section class="informacoes">
+                <div>
+                    <h1>Política de Cookies:</h1>
+                </div>
+
+                <p>
+                    Nossa Política de Cookies explica como utilizamos cookies em nosso site ou aplicação,
+                    em conformidade com as leis de privacidade e cookies vigentes, como o RGPD na União Europeia
+                    e legislação similar em outros países. Os cookies desempenham um papel importante na
+                    melhoria da experiência do usuário, coletando informações sobre preferências e
+                    comportamento de navegação. Em nossa política, esclarecemos os tipos de cookies que usamos,
+                    como são utilizados e como você pode controlar suas preferências em relação a eles. Garantimos
+                    que não coletamos seus dados pessoais sem seu consentimento explícito e fornecemos informações
+                    detalhadas sobre como recusar ou gerenciar os cookies em seu navegador.
+                </p>
+
+            </section>     
+        </section>
+
+        <section class="container-info" id="aboutUs">    
+            <section class="informacoes">
+                <div>
+                    <h1>Sobre nós:</h1>
+                </div>
+
+                <p>
+                    Victor Ramos Andrade Callegari é um profissional multifacetado, natural de Aracaju, Sergipe.
+                    Com uma formação acadêmica sólida em Agronomia, ele demonstra uma paixão pela diversidade de
+                    conhecimentos. Além disso, está em processo de formação em Análise e Desenvolvimento de
+                    Sistemas, evidenciando seu compromisso com a aprendizagem contínua.</br></br>
+
+                    Victor é um entusiasta da tecnologia, possuindo habilidades em várias linguagens de programação,
+                    como Python, JavaScript, HTML e CSS. Sua destreza em UX design adiciona uma camada adicional de
+                    criatividade ao seu perfil, demonstrando sua capacidade de criar experiências de usuário intuitivas
+                    e atraentes.</br></br>
+                    
+                    Atualmente, Victor está em busca de oportunidades no mercado de trabalho, direcionando seu foco para
+                    cargos de nível júnior. Sua motivação para entrar no campo da tecnologia e sua formação diversificada
+                    o tornam um candidato promissor para funções que requerem tanto habilidades técnicas quanto uma
+                    abordagem inovadora.</br></br>
+                    
+                    Com sua combinação única de conhecimento em agronomia, desenvolvimento de sistemas e design de UX,
+                    Victor Callegari tem o potencial de contribuir positivamente para qualquer equipe que
+                    o receba, trazendo uma perspectiva ampla e uma gama de habilidades valiosas para o mundo profissional.
+                </p>
+
+            </section>     
+        </section>
+        <hr>
+    </main>
+    <hr>
+
+    <footer class="footer" id="footer">
+        <section class="footer-section">
+            <div class="footer-column">
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="#privacity">Política de Privacidade</a></li>
+                        <li><a href="#service">Termos de Serviço</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-column">
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="#cookies">Política de Cookies</a></li>
+                        <li><a href="#aboutUs">Sobre nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>     
+        <section class="footer-section2">   
+            <div class="footer-column">
+                <nav>
+                    <ul class="logos-link">
+                        <li>
+                            <a href="https://github.com/VictorCallegari" target="_blank">
+                                <img src="../imagens/github-logo.png" alt="github logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/victorcallegarir/" target="_blank">
+                                <img src="../imagens/likedin-logo.png" alt="likendin logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="../imagens/pngimg.com - whatsapp_PNG95157.png" alt="whatsapp logo">
+                            </a>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="#inicio">VOLTAR AO TOPO</a></li>
+                </ul>
+            </nav>               
+        </section>   
+    </footer>
+    <div class="developer">
+        <span>Desenvolvido por: <strong>VICTOR CALLEGARI</strong></span>
+        <P>2023</P>
+    </div>
+
+</body>
+
+</html>

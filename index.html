@@ -2,41 +2,49 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Metatags para SEO-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Grupo 4">
     <meta name="description" content="Bem-vindo ao nosso cardápio digital. Aqui você encontrará nossa seleção de produtos deliciosos.">
+
+    <!-- Links para Estilização-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="shortcut icon" href="./imagens/LOGO-RESTAURANTE.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
     <title>TECH FOOD - CARDÁPIO</title>
 
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
+        <!-- Logomarca do Restaurante-->
         <div class="logo-techfood">
             <a href="#">
                 <img src="./imagens/LOGO-RESTAURANTE.png" alt="logo restaurante">
             </a>
         </div>
 
-        <nav class="seletor">
+        <!-- Links para agilizar buscas no site-->
+        <nav class="seletor mobile-menu">
+
             <div class="seletor-horizontal">
                 <ul class="link-lista">
-                    <li class="link-item">
-                        <a href="#">Início</a>
-                    </li>
                     <li class="link-item">
                         <a href="#menu">Menu</a>
                     </li>
                     <li class="link-item">
                         <a href="#cadastro">Cadastro</a>
                     </li>
+                    <li class="link-item">
+                        <a href="#footer">Informações</a>
+                    </li>
                 </ul>
             </div>    
         </nav>
-        <div class="barra-pesquisa">
+        <div class="barra-pesquisa"> <!-- Procurar por produto no menu-->
             <form action="" class="form-pesquisa">
                 <div class="area-pesquisa">
                     <div class="imagem-pesquisa">
@@ -48,12 +56,12 @@
             </form>
         </div>
 
-        <div class="address-button">
+        <div class="address-button"> <!-- Área de endereço-->
             <div>
-                <span class="address">R. Sessenta e Sete, 29</span>
+                <span class="address">R. Sessenta e Sete, 29</span> <!-- Endereço de entrega atual-->
             </div>
             <div>
-                <button class="arrow-down">
+                <button class="arrow-down"> <!-- cria link para alterar endereço de entrega-->
                     <img src="./imagens/red-arrow-down-hi.png" alt="seta para baixo">
                 </button>                
             </div>
@@ -62,24 +70,32 @@
         <div class="perfil-icon">
 
             <div>
-                <button class="button-perfil">
-                    <img src="./imagens/perfil - icon.jpeg" alt="icone perfil">
+                <button class="button-perfil"> <!-- cria link para perfil do cliente cadastrado -->
+                    <a href="#form-group">
+                        <img src="./imagens/perfil - icon.jpeg" alt="icone perfil">
+                    </a>                    
                 </button>
             </div>
 
-            <button class="bag-red">
+            <button class="bag-red"> <!-- cria link para a pagina carrinho com as informações contida nela-->
                 <img src="./imagens/shopping-bag-icon-sale-package-sign-design-free-png.webp" alt="bag vermelha">
 
-                <p class="valor-itens">
+                <p class="valor-itens"> <!-- informações contida na página de carrinho-->
                     <span class="carrinho">R$ 0,00</span>
                     <span class="carrinho">0 itens</span>
                 </p>
             </button>                    
         </div>
+        <div class="menu-icon">
+            <button>
+                <img src="./imagens/menu-hamburguer-icon.png" alt="menu hamburguer">
+            </button>
+        </div>
     </header>
     <hr>
 
     <main>
+        <!-- Imagem do cabeçalho - futuramente adicionar imagens passando automaticamente-->
         <div class="restaurante-container">
             <div class="restaurante-area">
                 <header class="imagem-restaurante">
@@ -88,141 +104,294 @@
                 </header>
             </div>
         </div>
-        <div class="area-texto-cardapio">
-            <h1 class="nome-cardapio">Cardápio Digital</h1>
-            <p class="frase-cardapio">
-                Bem-vindo ao nosso cardápio digital. Aqui você encontrará nossa
-                seleção de produtos deliciosos.
-            </p>
-        </div>
-        
-
-        <section class="menu">
-
-            <table class="tabela-menu" border="1">
-                <tr>
-                    <td rowspan="2">
-                        <img class="img-cardapio" src="./imagens/camarão.jpeg" alt="imagem de camarão assado no alho e óleo">
-                    </td>
-                    <th class="titulo">
-                        <h3>CAMARÃO AO ALHO E ÓLEO</h3>
-                    </td>
-                    <td rowspan="2" class="preco">
-                        <p><strong>R$ 59,99</strong></p>
-                    </td>
-                    <td rowspan="2" class="check-item">
-                        <input type="checkbox" name="select-item" id="camarao">
-                        <div class="select-item">
-                            <label for="quant-item">Quantidade:</label>
-                            <input type="number" name="quant-item" id="quant-item">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="descricao-item">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td rowspan="2">
-                        <img class="img-cardapio" src="imagens/churrasco.jpeg" alt="foto de uma peça de carne de churrasco por cima de uma tábua">
-                    </td>
-                    <th class="titulo">
-                        <h3>CHURRASCO GAÚCHO</h3>
-                    </td>
-                    <td rowspan="2" class="preco">
-                        <p><strong>R$ 59,99</strong></p>
-                    </td>
-                    <td rowspan="2" class="check-item">
-                        <input type="checkbox" name="select-item" id="churrasco">
-                        <div class="select-item">
-                            <label for="quant-item">Quantidade:</label>
-                            <input type="number" name="quant-item" id="quant-item">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="descricao-item">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td rowspan="2">
-                        <img class="img-cardapio" src="imagens/feijoada.jpeg" alt="foto de um caldeirão com feijoada">
-                    </td>
-                    <th class="titulo">
-                        <h3>FEIJOADA CARIOCA</h3>
-                    </td>
-                    <td rowspan="2" class="preco">
-                        <p><strong>R$ 59,99</strong></p>
-                    </td>
-                    <td rowspan="2" class="check-item">
-                        <input type="checkbox" name="select-item" id="feijoada">
-                        <div class="select-item">
-                            <label for="quant-item">Quantidade:</label>
-                            <input type="number" name="quant-item" id="quant-item">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="descricao-item">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td rowspan="2"><img class="img-cardapio" src="./imagens/parmegiana.jpeg"
-                            alt="foto de um prato com macarrão e molho de tomate por cima, com queijo ralado"></td>
-                    <th class="titulo">
-                        <h3>MACARRONADA ITALIANA</h3>
-                    </td>
-                    <td rowspan="2" class="preco">
-                        <p><strong>R$ 59,99</strong></p>
-                    </td>
-                    <td rowspan="2" class="check-item">
-                        <input type="checkbox" name="select-item" id="macarronada">
-                        <div class="select-item">
-                            <label for="quant-item">Quantidade:</label>
-                            <input type="number" name="quant-item" id="quant-item">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="descricao-item">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </td>
-                </tr>
-            </table>
-
-        </section>
-        <hr>
-
-        <section id="cadastro">
-            <div>
-                <h2>Formulário de Cadastro</h2>
+        <!-- Cabeçalho do Menu-->
+        <section class="container-menu" id="menu">
+            <div class="area-texto-cardapio">
+                <h1 class="nome-cardapio">Cardápio Digital</h1>
+                <p class="frase-cardapio">
+                    Bem-vindo ao nosso cardápio digital. Aqui você encontrará nossa
+                    seleção de produtos deliciosos.
+                </p>
             </div>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required> </br></br>
+            
+            <!-- Section de criação do menu utilizando tabela-->
+            <section class="menu">
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required> </br></br>
+                <table class="tabela-menu">
+                    <tr>
+                        <td rowspan="2"> <!-- informa a quantidade de linhas que a celula vai usar-->
+                            <img class="img-cardapio" src="./imagens/camarão.jpeg" alt="imagem de camarão assado no alho e óleo">
+                        </td>
+                        <th class="titulo">
+                            <h3>CAMARÃO AO ALHO E ÓLEO</h3>
+                        </td>
+                        <td rowspan="2" class="preco">
+                            <p><strong>R$ 59,99</strong></p>
+                        </td>
+                        <td rowspan="2" class="check-item"> <!-- cria a área de seleção do item e a quantidade de itens-->
+                            <input type="checkbox" name="select-item" id="camarao">
+                            <div class="select-item"> 
+                                <label for="quant-item">Quant.:</label>
+                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="descricao-item">
+                            <div>
+                                <p>
+                                    Camarões suculentos preparados com alho e óleo, resultando em um prato saboroso e aromático.
+                                    Um clássico da culinária marítima.
+                                </p>
+                                <img src="./imagens/prato-quente.png" alt="prato quente" class="imagem-icone-descricao" title="Prato quente">
+                                <img src="./imagens/serve-pessoas.png" alt="serve-1pessoa" class="imagem-icone-descricao" title="Serve 2 pessoas">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <img class="img-cardapio" src="imagens/churrasco.jpeg" alt="foto de uma peça de carne de churrasco por cima de uma tábua">
+                        </td>
+                        <th class="titulo">
+                            <h3>CHURRASCO GAÚCHO</h3>
+                        </td>
+                        <td rowspan="2" class="preco">
+                            <p><strong>R$ 89,99</strong></p>
+                        </td>
+                        <td rowspan="2" class="check-item">
+                            <input type="checkbox" name="select-item" id="churrasco">
+                            <div class="select-item">
+                                <label for="quant-item">Quant.:</label>
+                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="descricao-item">
+                            <p>
+                                Uma deliciosa peça de carne de churrasco à moda gaúcha, grelhada no ponto perfeito para os amantes de carne.
+                            </p>
+                            <img src="./imagens/prato-quente.png" alt="prato quente" class="imagem-icone-descricao" title="Prato quente">
+                            <img src="./imagens/serve-3pessoas.png" alt="serve 3 pessoas" class="imagem-icone-descricao" title="Serve 3 pessoas">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <img class="img-cardapio" src="imagens/feijoada.jpeg" alt="foto de um caldeirão com feijoada">
+                        </td>
+                        <th class="titulo">
+                            <h3>FEIJOADA CARIOCA</h3>
+                        </td>
+                        <td rowspan="2" class="preco">
+                            <p><strong>R$ 79,99</strong></p>
+                        </td>
+                        <td rowspan="2" class="check-item">
+                            <input type="checkbox" name="select-item" id="feijoada" >
+                            <div class="select-item">
+                                <label for="quant-item">Quant.:</label>
+                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="descricao-item">
+                            <p>
+                                A famosa feijoada carioca, uma refeição reconfortante com feijão preto, carne de porco, linguiça e acompanhamentos.
+                                Uma explosão de sabores.
+                            </p>
+                            <img src="./imagens/prato-quente.png" alt="prato quente" class="imagem-icone-descricao" title="Prato quente">
+                            <img src="./imagens/serve-pessoas.png" alt="serve 2 pessoa" class="imagem-icone-descricao" title="Serve 2 pessoas">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img class="img-cardapio" src="./imagens/parmegiana.jpeg"
+                                alt="foto de um prato com macarrão e molho de tomate por cima, com queijo ralado"></td>
+                        <th class="titulo">
+                            <h3>MACARRONADA ITALIANA</h3>
+                        </td>
+                        <td rowspan="2" class="preco">
+                            <p><strong>R$ 39,99</strong></p>
+                        </td>
+                        <td rowspan="2" class="check-item">
+                            <input type="checkbox" name="select-item" id="macarronada">
+                            <div class="select-item">
+                                <label for="quant-item">Quant.:</label>
+                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="descricao-item">
+                            <p>
+                                Macarrão servido com um rico molho de tomate e queijo ralado, relembrando a autêntica culinária italiana.
+                                Uma opção clássica e deliciosa.
+                            </p>
+                            <img src="./imagens/prato-quente.png" alt="prato quente" class="imagem-icone-descricao" title="Prato quente">
+                            <img src="./imagens/serve-1pessoa.png" alt="serve 1 pessoa" class="imagem-icone-descricao" title="Serve 1 pessoa">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img class="img-cardapio" src="./imagens/bolo-sorvete.jpg"
+                                alt="foto de um prato com macarrão e molho de tomate por cima, com queijo ralado"></td>
+                        <th class="titulo">
+                            <h3>TORTA GELADA DE CHOCOLATE COM NOZES</h3>
+                        </td>
+                        <td rowspan="2" class="preco">
+                            <p><strong>R$ 19,99</strong></p>
+                        </td>
+                        <td rowspan="2" class="check-item">
+                            <input type="checkbox" name="select-item" id="torta-sorvete">
+                            <div class="select-item">
+                                <label for="quant-item">Quant.:</label>
+                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="descricao-item">
+                            <p>
+                                Uma deliciosa sobremesa gelada que combina a riqueza do chocolate com a crocância das nozes em uma torta irresistível e refrescante.
+                            </p>
+                            <img src="./imagens/prato-frio.png" alt="prato frio" class="imagem-icone-descricao" title="Prato frio">
+                            <img src="./imagens/serve-1pessoa.png" alt="serve-1pessoa" class="imagem-icone-descricao" title="Serve 1 pessoa">
+                        </td>
+                    </tr>
+                </table>
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required> </br></br>
+            </section>
+        </section>
 
-                <button type="submit">Cadastrar</button>
+        <!-- Section para informar total de compras e enviar para carrinho-->        
+        <section class="form-final-pedido">
+            <form action="" class="form-carrinho">
+                <div class="total-pedido">
+                    <label for=""><strong>TOTAL DO PEDIDO:</strong></label>
+                    <P>R$ 0.00</P>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">ADICIONAR AO CARRINHO</button>
+                    <button type="reset">LIMPAR</button>
+                </div>
+            </form>
+        </section>    
+        <hr>
+        <!-- Sectior para a criação da tela de cadastro-->
+        <section id="cadastro">
+
+            <div class="container">            
+                <div>
+                    <h2>Formulário de Cadastro</h2>
+                </div>
+
+                <!-- Formulario utilizando BOOTSTRAP-->
+                <form id="form-group">
+                    <div class="row col-md-6">
+                        <div class="form-group">
+                            <label for="input-name">Nome</label>
+                            <input type="text" class="form-control" id="input-name" placeholder="João/Maria">
+                        </div>
+                        <div class="col">
+                            <label for="input-lastname">Sobrenome</label>
+                          <input type="text" class="form-control" id="input-lastname" placeholder="Silva">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label for="inputAddress">Endereço</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Avenida, Rua, Travessa...">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="inputAddress">Numero</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="nº 0">
+                        </div>
+                    </div>                    
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="inputCity">Cidade</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-1">
+                          <label for="inputEstado">Estado</label>
+                          <select id="inputEstado" class="form-control">
+                            <option selected>...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputCEP">CEP</label>
+                          <input type="text" class="form-control" id="inputCEP">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="exampleInputEmail1">Endereço de email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btn-primary">Enviar</button>                        
             </form>
         </section>
     </main>
+    <hr>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termos de Serviço</a></li>
-            </ul>
-        </nav>
+    <footer class="footer" id="footer">
+        <section class="footer-section">
+            <div class="footer-column">
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="./politicas/index.html#privacity">Política de Privacidade</a></li>
+                        <li><a href="./politicas/index.html#service">Termos de Serviço</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-column">
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="./politicas/index.html#cookies">Política de Cookies</a></li>
+                        <li><a href="./politicas/index.html#aboutUs">Sobre nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>     
+        <section class="footer-section2">   
+            <div class="footer-column">
+                <nav>
+                    <ul class="logos-link">
+                        <li>
+                            <a href="https://github.com/VictorCallegari" target="_blank">
+                                <img src="./imagens/github-logo.png" alt="github logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/victorcallegarir/" target="_blank">
+                                <img src="./imagens/likedin-logo.png" alt="likendin logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./imagens/pngimg.com - whatsapp_PNG95157.png" alt="whatsapp logo">
+                            </a>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="#inicio">VOLTAR AO TOPO</a></li>
+                </ul>
+            </nav>               
+        </section>   
     </footer>
+    <div class="developer">
+        <span>Desenvolvido por: <strong>VICTOR CALLEGARI</strong></span>
+        <P>2023</P>
+    </div>
 
 </body>
 

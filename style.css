@@ -1,0 +1,443 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffec;
+}
+
+main{
+    background-image: url("./imagens/bg_menus2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*---------INICIO DO HEADER----------*/
+
+nav{
+    display: block;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    height: 100%;
+    scroll-behavior: auto;
+}
+
+header{
+    display: flex;
+    margin: 5px ;
+    gap: 10px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+li{
+    display: flex;
+    margin-left: 15px;
+}
+
+li a{
+    text-decoration: none;
+    color: #4d4f50;
+    font-size: 20px;
+}
+
+span{
+    color: #4d4f50;
+}
+
+li a:hover{
+    color: #e63b27;
+}
+
+button{
+    background-color: #ffff;
+    border: none;
+    cursor: pointer;
+}
+
+.link-lista{
+    display: flex;
+}
+
+.logo-techfood{
+    width: 50px;
+}
+
+.logo-techfood img{
+    width: 100px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.seletor{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.barra-pesquisa{
+    display: flex;
+    padding: 3px;
+    margin-left: 50px;
+}
+
+.form-pesquisa{
+    display: grid;
+    width: 350px;
+    height: 10px;
+    margin-top: 20px;
+    background-color: #f3f2f1;
+    border-radius: 8px;
+}
+
+.area-pesquisa{
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #f3f2f1;
+    width: 100%;
+    position: relative;
+}
+
+.imagem-pesquisa img{
+    width: 30px;
+}
+
+.input-pesquisa{
+    color: #d1c3c1;
+}
+
+input{
+    display: flex;
+    height: 48px;
+    padding-left: 30px;
+    padding-right: 0;
+    width: 200px;
+    border: none;
+    background-color: #f3f2f1;
+}
+
+.address-button{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.arrow-down{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.perfil-icon{
+    display: flex;
+    margin-top: 10px;
+}
+
+.button-perfil{
+    margin-top: 10px;
+}
+
+.arrow-down img{
+    width: 10px;
+}
+
+.bag-red{
+    margin-left: 10px;
+    display: flex;
+    width: 110px;
+    align-items: center;
+    position: relative;
+    padding: 8px 12 px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.bag-red:hover{
+    background-color: #e9e8e6;
+}
+
+.bag-red img{
+    width: 20px;
+}
+
+.valor-itens{
+    margin: 0 0 0 6px;
+}
+
+p{
+    display: block;
+}
+
+.carrinho{
+    display: flex;
+    position: relative;
+    padding: 8px 12 px;
+    border-radius: 200px;
+    border: 0;
+    cursor: pointer;
+}
+
+.menu-icon button{
+    background-color: transparent;
+}
+
+.menu-icon img{
+    width: 50px;
+    height: auto;
+}
+
+/*---------FINAL DO HEADER----------*/
+/*-------INICIO FOTO DE CAPA-------------*/
+
+.imagem-restaurante{
+    padding: 40px 35px 0;
+    position: relative;
+    margin: auto;
+    padding-left: 50px;
+    background-image: url("./imagens/header-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+}
+
+/*-------FINAL FOTO DE CAPA-------------*/
+/*-------INICIO DO MENU-------------*/
+
+.container-menu, .form-final-pedido{
+    position: relative;
+    border: solid 2px gray;
+    margin: 30px;
+}
+
+.img-cardapio{
+    width: 200px;
+    height: 200px;
+}
+
+.area-texto-cardapio{
+    text-align: center;
+}
+
+.menu{
+    padding: 15px;
+}
+
+.tabela-menu{
+    width: 100%;
+}
+
+.tabela-menu img:hover{
+    scale: 1.05;
+    border: 2px solid #572019;
+}
+
+.descricao-item{
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.descricao-item p{
+    margin: 0;
+}
+
+.titulo{
+    height: 8px;
+    background-color: #ffffec;
+}
+
+.preco{
+    text-align: center;
+}
+
+.check-item{
+    width: 10px;
+}
+
+.check-item input{
+    height: 25px;
+}
+
+.select-item{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.select-item label{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+#quant-item{
+    width: 35px;
+    padding-left: 0;
+}
+
+.imagem-icone-descricao{
+    width: 40px;
+    height: auto;
+}
+
+.form-carrinho{
+    padding: 20px;
+    background-color: #ffffec;
+}
+
+.form-carrinho p{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+.form-carrinho button{
+    height: 30px;
+    background-color: #572019;
+    color: #ffff;
+}
+
+.form-carrinho button:hover{
+    background-color: #e63b27;
+    scale: 1.02;
+}
+
+/*-------FIM DO MENU-------------*/
+/*-------INICIO DO CADASTRO-------------*/
+.cadastro{
+    padding: 5px;
+}
+
+.container{
+    border: solid 2px gray;
+}
+
+#btn-primary{
+    margin-bottom: 15px;
+    background-color: #572019;
+    color: #ffff;
+    border-color: black;
+}
+
+#btn-primary:hover{
+    background-color: #e63b27;
+    scale: 1.02;
+}
+/*-------FIM DO CADASTRO-------------*/
+/*-------INICIO DO FOOTER-------------*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section{
+    width: 50%;
+    display: flex;
+    height: 100px;
+}
+
+.footer-section2{
+    width: 50%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+}
+
+.developer{
+    text-align: center;
+    font-size: small;
+}
+
+.logos-link li{
+    margin-bottom: 5px;
+}
+
+.logos-link img{
+    width: 30px;
+    height: auto;
+}
+/*-------FIM DO FOOTER-------------*/
+/*--------RESPONSIVIDADE-----------*/
+
+@media (min-width: 768px) {
+    .menu-icon {
+      display: none; /* Esconder a navegação normal */
+    }
+    .nav-items {
+      display: flex; 
+    }
+}
+  
+@media (max-width: 767px) {
+    .nav-items, .seletor-horizontal ,
+    .barra-pesquisa,.button-perfil, .descricao-item, .address-button {
+
+      display: none; /* Esconder a navegação normal */
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.5rem;
+        align-content: center;
+    }
+
+    .logo-techfood{
+        width: 60vw;
+    }
+
+    .restaurante-container, .restaurante-area, .imagem-restaurante{
+        height: 100px;
+    }
+
+    .img-cardapio{
+        width: 50px;
+        height: auto;
+    }
+
+    .titulo h3{
+        font-size: 12px;
+    }
+
+    .mobile-menu {
+       margin-left: 40px; 
+      display: block; /* Mostrar o menu hamburguer */
+    }
+
+    .select-item{
+        margin-top: 5px;
+    }
+    
+    .select-item label{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+    #quant-item{
+        width: 35px;
+        padding-left: 0;
+    }
+
+    .menu-icon{
+        margin-top: 5%;
+        margin-left: 5px;
+    }
+
+    .footer a, .frase-cardapio{
+        font-size: 10px;
+    }
+
+
+}
