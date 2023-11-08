@@ -261,39 +261,12 @@ p{
     text-align: center;
 }
 
-.check-item{
-    width: 10px;
-}
-
-.check-item input{
-    height: 25px;
-}
-
-.select-item{
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-}
-
-.select-item label{
-    margin-top: 5px;
-    margin-left: 30px;
-}
-
-#quant-item{
-    width: 35px;
-    padding-left: 0;
-}
-
 .imagem-icone-descricao{
     width: 40px;
     height: auto;
 }
 
-.form-carrinho{
-    padding: 20px;
-    background-color: #ffffec;
-}
+
 
 .form-carrinho p{
     padding: 0;
@@ -310,6 +283,61 @@ p{
 .form-carrinho button:hover{
     background-color: #e63b27;
     scale: 1.02;
+}
+
+.btn-select{
+    background-color: green;
+    color: #ffffec;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.form-final-pedido{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffec;
+}
+
+.items-list{
+    gap: 15px;
+    width: 60%;
+    height: 50px;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.menu-items h3{
+    font-size: 16px;
+}
+
+#quantidade-produto{
+    height: 20px;
+    width: 35px;
+    padding-left: 0;
+}
+
+.select-item{
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+#btn-subtrair-produto{
+    background-color: red;
+    color: #ffffec;
+    border-radius: 15px;
+    
+}
+
+#btn-adicionar-produto{
+    background-color: green;
+    color: #ffffec;
+    border-radius: 15px;
 }
 
 /*-------FIM DO MENU-------------*/

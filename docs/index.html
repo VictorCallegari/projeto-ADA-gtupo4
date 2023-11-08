@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="./imagens/LOGO-RESTAURANTE.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
+    <script src="script.js" defer></script>
+
     <title>TECH FOOD - CARDÁPIO</title>
 
 </head>
@@ -82,7 +84,7 @@
 
                 <p class="valor-itens"> <!-- informações contida na página de carrinho-->
                     <span class="carrinho">R$ 0,00</span>
-                    <span class="carrinho">0 itens</span>
+                    <span class="carrinho" id="quantidade-subtotal">0 itens</span>
                 </p>
             </button>                    
         </div>
@@ -129,10 +131,10 @@
                             <p><strong>R$ 59,99</strong></p>
                         </td>
                         <td rowspan="2" class="check-item"> <!-- cria a área de seleção do item e a quantidade de itens-->
-                            <input type="checkbox" name="select-item" id="camarao">
-                            <div class="select-item"> 
-                                <label for="quant-item">Quant.:</label>
-                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                           
+                            <div class="select-item">
+                                <button class="btn-select">SELECIONAR</button> 
+                               
                             </div>
                         </td>
                     </tr>
@@ -159,10 +161,10 @@
                             <p><strong>R$ 89,99</strong></p>
                         </td>
                         <td rowspan="2" class="check-item">
-                            <input type="checkbox" name="select-item" id="churrasco">
+                           
                             <div class="select-item">
-                                <label for="quant-item">Quant.:</label>
-                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                                <button class="btn-select">SELECIONAR</button> 
+                               
                             </div>
                         </td>
                     </tr>
@@ -186,10 +188,10 @@
                             <p><strong>R$ 79,99</strong></p>
                         </td>
                         <td rowspan="2" class="check-item">
-                            <input type="checkbox" name="select-item" id="feijoada" >
+                          
                             <div class="select-item">
-                                <label for="quant-item">Quant.:</label>
-                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                                <button class="btn-select">SELECIONAR</button> 
+                            
                             </div>
                         </td>
                     </tr>
@@ -213,10 +215,9 @@
                             <p><strong>R$ 39,99</strong></p>
                         </td>
                         <td rowspan="2" class="check-item">
-                            <input type="checkbox" name="select-item" id="macarronada">
+                           
                             <div class="select-item">
-                                <label for="quant-item">Quant.:</label>
-                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                                <button class="btn-select">SELECIONAR</button>                               
                             </div>
                         </td>
                     </tr>
@@ -240,10 +241,9 @@
                             <p><strong>R$ 19,99</strong></p>
                         </td>
                         <td rowspan="2" class="check-item">
-                            <input type="checkbox" name="select-item" id="torta-sorvete">
+                      
                             <div class="select-item">
-                                <label for="quant-item">Quant.:</label>
-                                <input type="number" name="quant-item" id="quant-item" min="0" value="0">
+                                <button class="btn-select">SELECIONAR</button> 
                             </div>
                         </td>
                     </tr>
@@ -263,17 +263,23 @@
 
         <!-- Section para informar total de compras e enviar para carrinho-->        
         <section class="form-final-pedido">
-            <form action="" class="form-carrinho">
-                <div class="total-pedido">
-                    <label for=""><strong>TOTAL DO PEDIDO:</strong></label>
-                    <P>R$ 0.00</P>
-                </div>
-                <br>
-                <div>
-                    <button type="submit">ADICIONAR AO CARRINHO</button>
-                    <button type="reset">LIMPAR</button>
-                </div>
-            </form>
+            <div class="items-list">
+
+            </div>
+            <div class="value-itens">
+                <form action="" class="form-carrinho">
+                    <div class="total-pedido">
+                        <label for=""><strong>TOTAL DO PEDIDO:</strong></label>
+                        <P>R$ <span id="valor-subtotal">0.00</span></P>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit">ADICIONAR AO CARRINHO</button>
+                        <button type="reset">LIMPAR</button>
+                    </div>
+                </form>
+            </div>
+            
         </section>    
         <hr>
         <!-- Sectior para a criação da tela de cadastro-->
@@ -302,8 +308,8 @@
                             <input type="text" class="form-control" id="inputAddress" placeholder="Avenida, Rua, Travessa...">
                         </div>
                         <div class="form-group col-md-1">
-                            <label for="inputAddress">Numero</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="nº 0">
+                            <label for="inputAddressnumber">Numero</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="nº 0">
                         </div>
                     </div>                    
                     <div class="form-row">
